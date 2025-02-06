@@ -1,6 +1,6 @@
 type Mode = Record<string, string | boolean>;
 
-export function classNames(css: string, mode: Mode, additional: string[]): string {
+export function classNames(css: string, mode: Mode = {}, additional: string[] = []): string {
     return [
         css,
         ...additional,
